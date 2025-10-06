@@ -1,0 +1,27 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: below center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.aviso{
+	border-radius: 15%;
+	padding: 20;
+	text-align: center;
+	flex-direction: row;
+	max-width: 30%;
+	margin: ;
+}
+
+
+
+.advice{
+	background-color: #88dc65;
+}
+.aviso i {
+	font-size: 50px;
+}

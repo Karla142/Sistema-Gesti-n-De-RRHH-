@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-right: 10px;
+}
+</style>
+
+
+<body>
+  
+    <form id="personalForm">
+        <input type="file" id="profilePicture" accept="image/*" required>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellido" placeholder="Apellido" required>
+        <input type="text" id="cedula" placeholder="Cédula" required>
+        <input type="text" id="cargo" placeholder="Cargo" required>
+        <input type="date" id="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
+        <button type="submit">Agregar</button>
+    </form>
+    <table id="personalTable">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cédula</th>
+                <th>Cargo</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+   
+   <script>
+document.getElementById('personalForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const profilePicture = document.getElementById('profilePicture').files[0];
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const cedula = document.getElementById('cedula').value;
+    const cargo = document.getElementById('cargo').value;
+    const fechaNacimiento = document.getElementById('fechaNacimiento').value;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const table = document.getElementById('personalTable').getElementsByTagName('tbody')[0];
+        const newRow = table.insertRow();
+        
+        newRow.innerHTML = `
+            <td><img src="${e.target.result}" width="50" height="50" alt="Foto"></td>
+            <td>${nombre}</td>
+            <td>${apellido}</td>
+            <td>${cedula}</td>
+            <td>${cargo}</td>
+            <td>${fechaNacimiento}</td>
+            <td>
+                <button onclick="editRow(this)">Editar</button>
+                <button onclick="deleteRow(this)">Eliminar</button>
+                <button onclick="previewRow(this)">Vista Previa</button>
+            </td>
+        `;
+    };
+    reader.readAsDataURL(profilePicture);
+
+    document.getElementById('personalForm').reset();
+});
+
+function deleteRow(button) {
+    const row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+
+function editRow(button) {
+    // Aquí se puede agregar la lógica para editar la fila
+}
+
+function previewRow(button) {
+    const row = button.parentNode.parentNode;
+    const nombre = row.cells[1].innerText;
+    const apellido = row.cells[2].innerText;
+    const cedula = row.cells[3].innerText;
+    const cargo = row.cells[4].innerText;
+    const fechaNacimiento = row.cells[5].innerText;
+    alert(`Vista Previa:\nNombre: ${nombre}\nApellido: ${apellido}\nCédula: ${cedula}\nCargo: ${cargo}\nFecha de Nacimiento: ${fechaNacimiento}`);
+}
+
+</script>
+
+</body>
+</html>
+

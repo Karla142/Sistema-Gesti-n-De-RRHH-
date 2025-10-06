@@ -1,0 +1,73 @@
+
+body{
+
+    background:url("img/FONDO1.png") no-repeat;
+      background-size: 110%;
+     margin:auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: sans-serif;
+
+}
+
+.container {
+
+      text-align: left;
+    padding-top: 200px;
+      display: flex;
+    }
+
+    h1 {
+      color: white;
+      font-size: 5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .primary{
+
+      display: flex;
+      background-color: #41a7f5;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 100px;
+      border-bottom: 100px;
+      width: 30px;
+    
+      height: 40px;
+      transition: background-color 0.5s;
+
+    }
+    .primary:hover{
+
+      background-color: #1477d2;
+
+    }
+    .button {
+     
+      display:flex ;
+      background-color: #41a7f5;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      width: auto;
+      height: auto;
+      font-size: 0.9em;
+      cursor: pointer;
+      position: relative;
+ 
+      transition: background-color 0.5s;
+    }
+
+    .button:hover {
+      background-color: #1477d2;
+    }
+
+  

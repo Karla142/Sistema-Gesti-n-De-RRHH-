@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAM</title>
+    <style>
+        body {
+            background-image: url("FONDO3.jpg");
+            background-size: 110%;
+            margin: auto;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: top center;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFFFFFFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            align-items: left;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2378b2;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px; /* Ajustado para mejor visualización */
+            margin: 20px auto; /* Centrado y con margen */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        }
+
+        .imagen-con-texto {
+            text-align: center;
+            margin: 20px; /* Reducido el margen para mejor espaciado */
+            width: 300px; /* Ancho fijo para las imágenes y textos */
+        }
+
+        .imagen-con-texto img {
+            max-width: 100%;
+            height: 200px; /* Altura fija para las imágenes */
+            object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+        }
+
+        .imagen-con-texto h2 {
+            margin-top: 10px;
+            color: #2378B2;
+            font-size: 25px;
+        }
+
+        .imagen-con-texto p {
+            margin-top: 5px;
+            color: #666;
+            text-align: justify; /* Justifica el texto */
+            padding: 0 10px; /* Añade padding para mejor espaciado */
+        }
+
+        .title {
+            font-family: Arial, sans-serif;
+            font-size: 60px;
+            color: #2378b2;
+            text-align: center;
+            padding: 20px 0; /* Añade padding para mejor espaciado */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="KAM.png" alt="KAM">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="manual.html">Inicio</a></li>
+                <li><a href="que_es_kam.html">¿Qué es KAM?</a></li>
+                <li><a href="videos_ayuda.html"> Videos de Ayuda</a></li>
+                <li><a href="modulos.html">Conoce Los Modulos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">Conoce Los Modulos del Sistema</h1>
+
+    <div class="contenedor-imagenes">
+        <div class="imagen-con-texto">
+            <img src="personal_manual.png" alt="Imagen 1">
+            <h2>Personal</h2>
+            <p>Registra, visualiza y monitorea a tus empleados en un solo lugar.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="asistencia_manual.png" alt="Imagen 2">
+            <h2>Asistencia</h2>
+            <p>Marca tu asistencia de manera manual o con tu huella dactilar y visualiza tu registro al instante.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="horarios_manual.png" alt="Imagen 3">
+            <h2>Horarios</h2>
+            <p>Crea horarios personalizados para tus empleados.</p>
+        </div>
+    </div>
+
+    <div class="contenedor-imagenes">
+        <div class="imagen-con-texto">
+            <img src="reportes_manual.png" alt="Imagen 1">
+            <h2>Reportes</h2>
+            <p>Accede a información completa y genera reportes descargables.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="permisos_manual.png" alt="Imagen 2">
+            <h2>Permisos</h2>
+            <p>Gestiona los permisos de tus empleados. Registra, accede y recibe notificaciones cuando expiren.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="mantenibilidad_manual.png" alt="Imagen 3">
+            <h2>Mantenibilidad</h2>
+            <p>¿Necesitas hacer alguna modificación en tus datos? Recupera accesos para realizar un respaldo. Encontrarás todas estas opciones en el módulo de Mantenibilidad.</p>
+        </div>
+    </div>
+
+    <h1 class="title">Herramientas de Usuario</h1>
+
+    <div class="contenedor-imagenes">
+        <div class="imagen-con-texto">
+            <img src="perfil_manual.png" alt="Imagen 1">
+            <h2>Perfil</h2>
+            <p>Visualiza tu nombre de Usuario y Correo Electrónico.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="calendario_manual.png" alt="Imagen 2">
+            <h2>Calendario</h2>
+            <p>Agenda tus reuniones y Permisos.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="notificaciones_manual.png" alt="Imagen 3">
+            <h2>Notificaciones</h2>
+            <p>Revisa notificaciones de los permisos expirados y reuniones por asistir.</p>
+        </div>
+    </div>
+
+     <style>
+       .floating-button{
+
+background-color:#2378b2;
+opacity:60%;
+padding-top: 4px;
+border:none;
+border-radius:50%;
+width:60px;
+height: 55px;
+position:fixed;
+bottom: 35px;
+right: 20px;
+cursor:pointer;
+}
+
+
+       .hover-message {
+           display: none;
+           position: absolute;
+           top: -30px; /* Ajusta la posición como sea necesario */
+     left:10%;
+           background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+           color: white; /* Letras blancas */
+          font-size: 15px;
+           border-radius: 5px;
+          padding: 4px;
+           z-index: 2; /* Coloca el mensaje detrás de la imagen */
+           opacity: 0.9; /* Ajusta la opacidad */
+       }
+
+       .floating-button:hover .hover-message {
+           display: block; /* Muestra el mensaje al pasar el ratón */
+       }
+   </style>
+        <a href="principal.php">
+          <div  class="floating-button">
+            <img src="casita.png" width="60" height="40" alt="#">
+            <div class="hover-message">Principal</div></div>
+       </a>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAM</title>
+</head>
+
+<style>
+
+
+
+body{
+
+
+      background-image: url("FONDO3.jpg");
+      background-size:110%;
+      margin: auto;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: top center;
+      font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    align-items: left;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2378b2; 
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    color: #2378b2;
+    text-align: center;
+    padding: -2px;
+    animation: titleAnimation 1.5s ease-out forwards;
+}
+
+.title2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #2378b2;
+    text-align: center;
+    margin-top: -15px;
+    animation: titleAnimation 1.5s ease-out forwards;
+}
+
+.title3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #2378b2;
+    text-align: center;
+    margin-top: 15%;
+  }
+.modulos-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .modulo {
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .modulo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .modulo h2 {
+            color: #2378B2;
+            margin-bottom: 10px;
+
+        }
+
+        h2{
+
+            font: Arial;
+        }
+
+        .modulo p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .modulo .ir-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2378B2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .modulo .ir-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</style>
+
+<body>
+    <header>
+        
+        <div class="logo">
+            <img src="KAM.png" alt="KAM">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="manual.html">Inicio</a></li>
+                <li><a href="que_es_kam.html">¿Qué es KAM?</a></li>
+                <li><a href="videos_ayuda.html"> Videos de Ayuda</a></li>
+                <li><a href="modulos.html">Conoce Los Modulos</a></li>
+           </ul>
+        </nav>
+    </header>
+
+
+    <h1 class="title">Manual de Usuario</h1>
+        <h6 class="title2">¿Cómo podemos Ayudarte?</h6>
+
+ <div class="modulos-container">
+        <div class="modulo">
+            <img src="que_es_kam.png" alt="Imagen 1">
+            <h2>¿Que es KAM?</h2>
+            
+            <a href="que_es_kam.html" class="ir-button">Ir</a>
+        </div>
+
+        <div class="modulo">
+            <img src="videos_ayuda.png" alt="Imagen 2">
+            <h2>Videos de Ayuda</h2>
+            <a href="videos_ayuda.html" class="ir-button">Ir</a>
+        </div>
+
+        <div class="modulo">
+            <img src="modulos.png" alt="Imagen 3">
+            <h2> Conoce Los Modulos</h2>
+            <a href="modulos.html" class="ir-button">Ir</a>
+        </div>
+    </div>
+
+   <style>
+       .floating-button{
+
+background-color:#2378b2;
+opacity:60%;
+padding-top: 4px;
+border:none;
+border-radius:50%;
+width:60px;
+height: 55px;
+position:fixed;
+bottom: 35px;
+right: 20px;
+cursor:pointer;
+}
+
+
+       .hover-message {
+           display: none;
+           position: absolute;
+           top: -30px; /* Ajusta la posición como sea necesario */
+     left:10%;
+           background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+           color: white; /* Letras blancas */
+          font-size: 15px;
+           border-radius: 5px;
+          padding: 4px;
+           z-index: 2; /* Coloca el mensaje detrás de la imagen */
+           opacity: 0.9; /* Ajusta la opacidad */
+       }
+
+       .floating-button:hover .hover-message {
+           display: block; /* Muestra el mensaje al pasar el ratón */
+       }
+   </style>
+        <a href="principal.php">
+          <div  class="floating-button">
+            <img src="casita.png" width="60" height="40" alt="#">
+            <div class="hover-message">Principal</div></div>
+       </a>
+
+
+
+</body>
+</html>

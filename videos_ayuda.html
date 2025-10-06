@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAM - Videos de Ayuda</title>
+    <style>
+        body {
+            background-image: url("FONDO3.jpg");
+            background-size: cover; /* Cambiado a cover para mejor ajuste */
+            margin: 0; /* Eliminado auto para que no haya márgenes innecesarios */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center; /* Centrado el fondo */
+            font-family: sans-serif;
+            display: flex; /* Usamos flexbox para centrar todo el contenido */
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que el body cubra toda la altura de la pantalla */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFFFFFFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2378b2;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .contenedor-modulos {
+            display: flex;
+            justify-content: center; /* Centramos los módulos */
+            flex-wrap: wrap;
+            padding: 20px; /* Añadimos padding para separar del borde */
+        }
+
+        .modulo {
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            box-sizing: border-box; /* Incluimos padding y border en el ancho */
+        }
+
+        .miniatura {
+            width: 80%;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .ver-mas {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2378B2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .ver-mas:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2378B2;
+            margin-top: 40px;
+            width: 100%; /* Asegura que h1 ocupe todo el ancho */
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2378B2;
+            margin-top: 25px;
+            width: 100%; /* Asegura que titulo ocupe todo el ancho */
+        }
+
+        /* Ajustes para centrar el contenido verticalmente */
+        main {
+            flex-grow: 1; /* Permite que el contenido principal se expanda */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido horizontalmente */
+            justify-content: flex-start; /* Alinea el contenido al inicio verticalmente */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="KAM.png" alt="KAM">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="manual.html">Inicio</a></li>
+                <li><a href="que_es_kam.html">¿Qué es KAM?</a></li>
+                <li><a href="videos_ayuda.html">Videos de Ayuda</a></li>
+                <li><a href="modulos.html">Conoce Los Modulos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-modulos">
+            <h1>Videos de Ayuda</h1>
+            <div class="modulo">
+                <img src="miniatura_video1.jpg" alt="Miniatura Video 1" class="miniatura">
+                <h3>Inicio de Sesión</h3>
+                <a href="inicio_sesion.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video2.jpg" alt="Miniatura Video 2" class="miniatura">
+                <h3>Recuperación de Usuario</h3>
+                <a href="recuperacion_usuario.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video3.jpg" alt="Miniatura Video 3" class="miniatura">
+                <h3>Recuperación de Contraseña</h3>
+                <a href="recuperacion_contraseña.mp4" class="ver-mas">Ver</a>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contenedor-modulos">
+            <h1>Modulo Personal</h1>
+            <div class="modulo">
+                <img src="miniatura_video4.jpg" alt="Miniatura Video 1" class="miniatura">
+                <h3>Registro del Personal</h3>
+                <a href="registro_personal.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video5.jpg" alt="Miniatura Video 2" class="miniatura">
+                <h3>Editar y vista previa del Registro del Personal</h3>
+                <a href="editar_vista_personal.mp4" class="ver-mas">Ver</a>
+            </div>
+        </div>
+
+
+
+
+        <div class="contenedor-modulos">
+            <h1 class="titulo">Modulo Control de Asistencia</h1>
+            <div class="modulo">
+                <img src="miniatura_video6.jpg" alt="Miniatura Video 1" class="miniatura">
+                <h3>Control de Asistencia Manual</h3>
+                <a href="Asistencia_manual.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video7.jpg" alt="Miniatura Video 2" class="miniatura">
+                <h3>Control de Asistencia Capta huella</h3>
+                <a href="asistencia_captahuella.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video8.jpg" alt="Miniatura Video 3" class="miniatura">
+                <h3>Gestión de Asistencia</h3>
+                <a href="gestion_asistencia.mp4" class="ver-mas">Ver</a>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contenedor-modulos">
+            <h1 class="titulo">Modulo Horario</h1>
+            <div class="modulo">
+                <img src="miniatura_video9.jpg" alt="Miniatura Video 1" class="miniatura">
+                <h3>Gestión de Horarios Preescolar</h3>
+                <a href="gestion_horario_prescolar.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video10.jpg" alt="Miniatura Video 2" class="miniatura">
+                <h3>Gestión de Horarios Primaria</h3>
+                <a href="gestion_horario_primaria.mp4" class="ver-mas">Ver</a>
+            </div>
+            <div class="modulo">
+                <img src="miniatura_video11.jpg" alt="Miniatura Video 3" class="miniatura">
+                <h3>Gestión de Horarios Media General</h3>
+                <a href="gestion_horario_media.mp4" class="ver-mas">Ver</a>
+            </div>
+        </div>
+
+
+
+    <div class="contenedor-modulos">
+        <h1 class="titulo">Modulo Reportes </h1> <div class="contenedor-modulos">
+        <div class="modulo">
+            <img src="miniatura_video12.jpg" alt="Miniatura Video 1" class="miniatura">
+            <h3> Gestión de Reporte Personal</h3>
+            <a href="gestion_reportes_personal.mp4" class="ver-mas">Ver</a>
+        </div>
+        <div class="modulo">
+            <img src="miniatura_video13.jpg" alt="Miniatura Video 2" class="miniatura">
+            <h3>Gestión de Reporte Asistencia</h3>
+            <a href="gestion_reportes_asistencia.mp4" class="ver-mas">Ver</a>
+        </div>
+        <div class="modulo">
+            <img src="miniatura_video14.jpg" alt="Miniatura Video 3" class="miniatura">
+            <h3>Gestión de Reporte Horario</h3>
+            <a href="gestion_reportes_horario.mp4" class="ver-mas">Ver </a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="contenedor-modulos">
+        <h1 class="titulo">Modulo Permisos </h1> <div class="contenedor-modulos">
+        <div class="modulo">
+            <img src="miniatura_video15.jpg" alt="Miniatura Video 1" class="miniatura">
+            <h3> Gestión de Permisos Reposos </h3>
+            <a href="gestion_permisos_reposos.mp4" class="ver-mas">Ver</a>
+        </div>
+        <div class="modulo">
+            <img src="miniatura_video16.jpg" alt="Miniatura Video 2" class="miniatura">
+            <h3> Gestión de Permisos Licencias</h3>
+            <a href="gestion_permisos_licencias.mp4" class="ver-mas">Ver </a>
+        </div>
+        
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="contenedor-modulos">
+        <h1 class="titulo">Modulo Mantenibilidad </h1> <div class="contenedor-modulos">
+        <div class="modulo">
+            <img src="miniatura_video17.jpg" alt="Miniatura Video 1" class="miniatura">
+            <h3> Bitacora </h3>
+            <a href="mante_bitacora.mp4" class="ver-mas">Ver </a>
+        </div>
+
+        <div class="modulo">
+            <img src="miniatura_video22.jpg" alt="Miniatura Video 2" class="miniatura">
+            <h3>Asignación de Roles</h3>
+           <a href="asign_roles.mp4" class="ver-mas">Ver </a>
+        </div>
+
+         <div class="modulo">
+            <img src="miniatura_video22.jpg" alt="Miniatura Video 2" class="miniatura">
+            <h3>Registro de Usuario</h3>
+           <a href="registro_usuario.mp4" class="ver-mas">Ver </a>
+        </div>
+        
+        
+        
+
+<div class="contenedor-modulos">
+        <h1 class="titulo"> Herramientas del Usuario </h1> <div class="contenedor-modulos">
+        <div class="modulo">
+            <img src="miniatura_video19.jpg" alt="Miniatura Video 1" class="miniatura">
+            <h3> Herramientas de Usuario </h3>
+            <a href="herra_usuario.mp4" class="ver-mas">Ver</a>
+        </div>
+        
+    </div>
+
+
+ <style>
+       .floating-button{
+
+background-color:#2378b2;
+opacity:60%;
+padding-top: 4px;
+border:none;
+border-radius:50%;
+width:60px;
+height: 55px;
+position:fixed;
+bottom: 35px;
+right: 20px;
+cursor:pointer;
+}
+
+
+       .hover-message {
+           display: none;
+           position: absolute;
+           top: -30px; /* Ajusta la posición como sea necesario */
+     left:10%;
+           background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+           color: white; /* Letras blancas */
+          font-size: 15px;
+           border-radius: 5px;
+          padding: 4px;
+           z-index: 2; /* Coloca el mensaje detrás de la imagen */
+           opacity: 0.9; /* Ajusta la opacidad */
+       }
+
+       .floating-button:hover .hover-message {
+           display: block; /* Muestra el mensaje al pasar el ratón */
+       }
+   </style>
+        <a href="principal.php">
+          <div  class="floating-button">
+        
+            <img src="casita.png" width="60" height="40" alt="#">
+            <div class="hover-message">Principal</div></div>
+       </a>
+
+
+</body>
+</html>

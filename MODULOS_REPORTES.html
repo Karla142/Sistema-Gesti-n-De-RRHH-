@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+
+<html lagn="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+
+    <title>KAM</title>
+
+  <style>
+
+/*estilo de fondo*/
+
+body{
+
+    background:url(FONDO3.jpg) no-repeat;
+      background-size: 110%;
+      margin:auto;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: top center;
+      font-family: sans-serif;
+
+
+}
+.containe{
+display: flex;
+justify-content: space-around;
+
+}
+
+.logo{
+
+position:absolute;
+top:10px;
+right:0px;
+
+}
+
+
+
+
+
+.modules-container {
+            display: flex;
+            justify-content: center; 
+            flex-wrap: wrap;
+              padding-top: 2%;
+        }
+
+        .module { 
+            width: 250px;
+            height: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+
+            margin: 60px;
+            border-radius: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            
+        }
+.module:hover {
+            background-color: #B1D0E2;
+        }
+        .module i {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .module h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2378B2;
+    text-align: 100px;
+
+}
+
+.module img {
+ max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+    width: 70%;
+}
+
+
+
+button {
+  background-color: #ffffff; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;   
+  margin: 4px 2px;
+  cursor: pointer;   
+  border-radius: 4px;
+}
+button:hover {
+            background-color: #B1D0E2;
+            
+        }
+.reporte {
+ text-decoration: none;
+
+
+}
+
+  h1 {
+    text-align: center;
+    color: #2378b2;
+
+}  .letra{
+
+            margin-top: 4%;
+        }
+</style>
+<div class="letra">
+<h1>Gestión De Reportes</h1>
+</div>
+<script>
+        
+        document.querySelectorAll('.logo-container').forEach(container => {
+    const logo = container.querySelector('.logo');
+    const hoverMessage = container.querySelector('.hover-message');
+
+    logo.addEventListener('mouseenter', () => {
+        hoverMessage.style.display = 'block';
+    });
+
+    logo.addEventListener('mouseleave', () => {
+        hoverMessage.style.display = 'none';
+    });
+});
+
+    </script>
+
+
+    <style>
+        .container {
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-container {
+            position: relative;
+        }
+        .hover-message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 105%;
+            transform: translateY(-50%);
+           background-color: #333;
+    opacity: 60%;
+     font-size: 15px;
+            color: white; /* Letras blancas */
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .logo-container:hover .hover-message {
+            display: block;
+        }
+     
+    </style>
+
+<div class="container"> 
+    <div class="logo-container">
+        <a href="principal.html">
+            <img src="inicio.png" width="40" height="30" alt="perfil">   
+            <div class="hover-message">Principal/Reportes</div>
+        </a>
+    </div>
+</div>
+
+
+    <div class="containe"> 
+  <div class="logo">
+
+<img src="edupalcubo.png" width="120" height="85"   alt="perfil">
+  
+    </div>
+  </div>  
+  
+<body>
+
+
+
+    <div class="modules-container">
+        <div class="module">
+        <button>
+          <a class="reporte" href="tabla_reportes_personal.php">
+  <img src="personal2.png"  alt="listado personal " width="200" height="150">
+  <br> <br>
+  <h2> Personal </h2>
+ </button> </a>
+
+        </div>
+        <div class="module">
+       <button>
+        <a class="reporte" href="tabla_reportes_asistencias.php">
+  <img src="huella3.png" alt="listado asistencia">
+  <br>
+  <h2> Asistencia </h2>
+ </button> </a>
+
+
+        </div>
+        <div class="module">
+     <button>
+      <a class=reporte href="tabla_reportes_horario.php">
+  <img src="almanaque.png" alt="listado horarios">
+  <br>
+  <h2> Horario  </h2>
+  </button> </a>
+        </div>
+
+
+
+
+</body>
+</html>
